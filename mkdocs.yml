@@ -1,4 +1,6 @@
 site_name: Economía de trinchera
+site_url: https://ariznaf.github.io/economia/
+se_directory_urls: false
 extra_css:
   - styles/extra.css
 extra:
