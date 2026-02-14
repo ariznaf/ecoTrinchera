@@ -1,0 +1,53 @@
+site_name: Economía de trinchera
+extra_css:
+  - styles/extra.css
+extra:
+  social:
+    - icon: material/home
+      link: /
+markdown_extensions:
+  - attr_list
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.path
+nav:
+  - Inicio: index.md
+  - Ideas:
+      - ideas/index.md
+      - Contabilidad 3.0:
+          - ideas/contabilidad3/index.md
+          - ideas/contabilidad3/uuid.md
+          - ideas/contabilidad3/agentes.md
+          - ideas/contabilidad3/registradores.md
+          - ideas/contabilidad3/cuentas_traspasos.md
+          - ideas/contabilidad3/operaciones_internas.md
+          - ideas/contabilidad3/operaciones_externas.md
+          - ideas/contabilidad3/valores_cotizables.md
+          - ideas/contabilidad3/ejemplos.md
+          - ideas/contabilidad3/seguridad.md
+          - ideas/contabilidad3/marco_legal_y_transicion.md
+          - ideas/contabilidad3/migracion_voluntaria.md
+          - ideas/contabilidad3/integracion_sistemas_tradicionales.md
+          - ideas/contabilidad3/conclusion.md
+  - Programas:
+      - programas/index.md
+  - Inversión:
+      - inversion/index.md
+
