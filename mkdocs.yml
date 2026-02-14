@@ -1,35 +1,43 @@
-site_name: Economía de trinchera
-site_url: https://ariznaf.github.io/economia/
-se_directory_urls: false
+site_name: Economía de trinchera        # Nombre visible del sitio
+site_url: https://ariznaf.github.io/ecotrinchera/  # URL pública del sitio (importante para SEO)
+use_directory_urls: false                # Usa URLs con .html en vez de directorios
 extra_css:
-  - styles/extra.css
+  - styles/extra.css                    # CSS adicional para personalizar estilos
+
 extra:
-  social:
-    - icon: material/home
-      link: /
+  social:                               # Iconos sociales en la cabecera o footer
+    - icon: material/home               # Icono de "home" de Material Icons
+      link: /                           # Enlace al inicio del sitio
+
 markdown_extensions:
-  - attr_list
+  - attr_list                           # Permite atributos en Markdown (clases, estilos, etc.)
+
 theme:
-  name: material
+  name: material                        # Usa el tema Material for MkDocs
+  custom_dir: overrides                 # Carpeta con plantillas personalizadas (como main.html)
+
+  # Paletas de colores (modo oscuro y claro)
   palette:
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - scheme: slate                     # Modo oscuro
+      primary: indigo                   # Color primario
+      accent: indigo                    # Color de acento
       toggle:
-        icon: material/weather-sunny
-        name: Cambiar a modo claro
-    - scheme: default
-      primary: indigo
-      accent: indigo
+        icon: material/weather-sunny    # Icono del botón para cambiar a modo claro
+        name: Cambiar a modo claro      # Texto accesible del botón
+    - scheme: default                   # Modo claro
+      primary: indigo                   # Color primario
+      accent: indigo                    # Color de acento
       toggle:
-        icon: material/weather-night
-        name: Cambiar a modo oscuro
+        icon: material/weather-night    # Icono del botón para cambiar a modo oscuro
+        name: Cambiar a modo oscuro     # Texto accesible del botón
+
   features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.instant
-    - navigation.path
-nav:
+    - navigation.tabs                   # Muestra pestañas en la navegación superior
+    - navigation.top                    # Botón para volver arriba
+    - navigation.instant                # Navegación instantánea sin recargar página
+    - navigation.path                   # Muestra la ruta (breadcrumb) de la página
+
+nav:                                    # Estructura del menú de navegación
   - Inicio: index.md
   - Ideas:
       - ideas/index.md
@@ -52,4 +60,3 @@ nav:
       - programas/index.md
   - Inversión:
       - inversion/index.md
-

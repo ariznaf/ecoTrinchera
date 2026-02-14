@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+
+  {# Mostrar Giscus solo si existe 'page' y no se ha puesto comments: false #}
+  {% if page and (page.meta.comments is not defined or page.meta.comments != false) %}
+    <div id="giscus"></div>
+  {% endif %}
+{% endblock %}
