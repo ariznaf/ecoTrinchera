@@ -8,7 +8,8 @@ extra:
   social:                               # Iconos sociales en la cabecera o footer
     - icon: material/home               # Icono de "home" de Material Icons
       link: /                           # Enlace al inicio del sitio
-
+extra_javascript:
+  - js/giscus.js
 markdown_extensions:
   - attr_list                           # Permite atributos en Markdown (clases, estilos, etc.)
 
